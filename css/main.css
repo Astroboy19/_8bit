@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+
+.board_game{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.924);
+}
+/* start nav */
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    border: 5px solid black;
+    background-color: rgb(182, 73, 73);
+    color: rgb(246, 242, 242);
+}
+
+nav .b_score{
+    flex: 1;
+    
+    text-align: center;
+}
+nav .b_timer{
+    flex: 1;
+    border-left:1px solid black;
+    text-align: center;
+}
+nav .b_level{
+    flex: 1;
+    border-left:1px solid black;
+    text-align: center;
+}
+nav span{
+    font-size: 17px;
+}
+nav .text{
+    color: black;
+    font-weight: bolder;
+}
+/* end nav */
+
+/* start section */
+
+section{
+    width:100%;
+    height:46%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    
+}
+
+section .lamps{
+    width: 200px;
+    height: 350px;
+    background-color: black;
+    position: relative;
+    padding: 5px;
+}
+
+section .lamps .lamp{
+    position: absolute;
+}
+
+section .lamps .lamp.off{
+    background-color: rgba(255, 255, 255, 0.13);
+}
+section .lamps .lamp.on{
+    background-color: rgb(175, 41, 41);
+}
+
+#a{
+    width: 190px;
+    height: 20px;
+}
+#b{
+    width: 20px;
+    height: 135px;
+    top:30px;
+}
+#c{
+    width: 20px;
+    height: 135px;
+    top:30px;
+    left:175px;
+    
+}
+#d{
+    width: 190px;
+    height: 20px;
+    top:170px
+}
+#e{
+    width: 20px;
+    height: 125px;
+    top:195px;
+}
+#f{
+    width: 20px;
+    height: 125px;
+    top:195px;
+    left:175px;
+}
+#g{
+    width: 190px;
+    height: 20px;
+    top:325px
+}
+
+/* alphabet */
+.alphabet{
+    color: rgba(194, 30, 30, 0.61);
+    font-size: 25px;
+    position: absolute;
+}
+
+.l_a{
+    top:25px;
+    left:90px;
+}
+.l_b{
+    top: 80px;
+    left: 30px;
+}
+.l_c{
+    top: 80px;
+    right: 30px;
+}
+.l_d{
+    top: 190px;
+    left: 90px;
+}
+.l_e{
+    top: 250px;
+    left: 30px;
+}
+.l_f{
+    top: 250px;
+    right: 30px;
+}
+.l_g{
+    top: 295px;
+    left: 90px;
+}
+
+
+/* end section */
+
+
+/* start footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+/* footer 1 */
+footer .footer_1{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .footer_1 .text{
+    color: rgb(206, 57, 57);
+}
+
+footer .footer_1 .random{
+    color: white;
+    font-size: 20px;
+}
+
+footer .footer_1 button{
+    width: 70px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.13);
+    outline: none;
+    font-weight: bolder;
+
+}
+
+/* footer 2 */
+
+footer .footer_2{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 15px;
+}
+
+footer .footer_2 .table{
+    width: 100%;
+    height:100px;
+    background-color:  rgba(255, 255, 255, 0.13);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer_2 .table .letter{
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer_2 .table .letter h3{
+    font-size: 20px;
+    color: rgb(245, 231, 231);
+}
+footer .footer_2 .table .bit{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer_2 .table .bit h3{
+    font-size: 20px;
+    color: rgb(180, 48, 48);
+}
+
+/* end footer */
+
+
+/* start copyright */
+
+.copyright{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    color: rgba(245, 245, 245, 0.52);
+    font-size: 15px;
+}
+
+.copyright p span{
+    font-weight: bolder;
+    color: rgba(211, 86, 28, 0.89);
+}
+
+/* end copyright */

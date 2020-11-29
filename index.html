@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8bit</title>
     <link rel="stylesheet" href="./css/main.css">
+    <!-- Jquery -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.js"
+  integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+  crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="board_game">
         <nav>
             <div class="b_score">
-                <span class="text">SCORE: </span><span id="score">10</span>
+                <span class="text">SCORE: </span><span id="score"></span>
             </div>
             <div class="b_timer">
-                <span class="text">TIMER: </span><span id="score">10</span>
+                <span class="text">TIMER: </span><span id="timer"></span>
             </div>
             <div class="b_level">
-                <span class="text">LEVEL: </span><span id="score">10</span>
+                <span class="text">LEVEL: </span><span id="level"></span>
             </div>
         </nav>
         <section>
@@ -40,11 +45,11 @@
         <footer>
             <div class="footer_1">
                 <div class="_1">
-                    <button id="__1">1=f</button>
+                    <button class="cnt _1">1=f</button>
                 </div>
-                <div class="random"><span class="text">TARGET: </span><span class="random">200</span> </div>
+                <div class="random"><span class="text">TARGET: </span><span id="target" class="random"></span> </div>
                 <div class="_0">
-                    <button id="__0">0=g</button>
+                    <button class="cnt _0">0=j</button>
                 </div>
             </div>
             <div class="footer_2">
@@ -53,7 +58,7 @@
                         <h3>A</h3>
                     </div>
                     <div class="bit">
-                        <h3>1</h3>
+                        <h3></h3>
                     </div>
                 </div>
                 <div id="t_b" class="table">
@@ -61,7 +66,7 @@
                         <h3>B</h3>
                     </div>
                     <div class="bit">
-                        <h3>0</h3>
+                        <h3></h3>
                     </div>
                 </div>
                 <div id="t_c" class="table">
@@ -69,7 +74,7 @@
                         <h3>C</h3>
                     </div>
                     <div class="bit">
-                        <h3>1</h3>
+                        <h3></h3>
                     </div>
                 </div>
                 <div id="t_d" class="table">
@@ -77,7 +82,7 @@
                         <h3>D</h3>
                     </div>
                     <div class="bit">
-                        <h3>0</h3>
+                        <h3></h3>
                     </div>
                 </div>
                 <div id="t_e" class="table">
@@ -85,7 +90,7 @@
                         <h3>E</h3>
                     </div>
                     <div class="bit">
-                        <h3>1</h3>
+                        <h3></h3>
                     </div>
                 </div>
                 <div id="t_f" class="table">
@@ -93,7 +98,7 @@
                         <h3>F</h3>
                     </div>
                     <div class="bit">
-                        <h3>1</h3>
+                        <h3></h3>
                     </div>
                 </div>
                 <div id="t_g" class="table">
@@ -101,7 +106,7 @@
                         <h3>G</h3>
                     </div>
                     <div class="bit">
-                        <h3>0</h3>
+                        <h3></h3>
                     </div>
                 </div>
                 
